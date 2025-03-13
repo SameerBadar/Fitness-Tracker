@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.frontImg{
+    position: relative;
+    background-image: url(2.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    margin-top: 0%;
+}
+.frontImg button{
+    margin-top: 35%;
+    padding: 15px;
+    width: 25%;
+    margin-left: 7%;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.frontImg button:hover{
+    background-color: gray;
+    transition: background-color 1s;
+}
+.frontImg p{
+    color: white;
+    margin-top: 1%;
+    font-size: 1rem;
+    margin-left: 15%;
+}
+.frontImg p a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#AboutGoals{
+    padding: 10px;
+    margin-top: 10px;
+}
+.goalsText{
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 35%;
+}
+.sideImage1{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    width: 45%;
+}
+.goalsText h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.goalsText p{
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+.sideImage1 img{
+    width: 100%;
+    height: 500px;
+}
+.goalsText button{
+    margin-top: 10%;
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.goalsText button:hover{
+    background-color: gray;
+    transition: background-color 1s;
+}
+
+#Activity{
+    padding: 10px;
+    margin-top: 40px;
+}
+.activityText{
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 35%;
+}
+.sideImg2{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    width: 45%;
+}
+.activityText h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.activityText p{
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+.sideImg2 img{
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+}
+.activityText button{
+    margin-top: 10%;
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.activityText button:hover{
+    background-color: gray;
+    transition: background-color 1s;
+}
+
+#Footer1 {
+    background-color: rgba(211, 211, 211, 1);
+    height: 250px;
+    margin-top: 10%;
+    padding-bottom: 20px;
+}
+.logo {
+    margin-left: 7%;
+    display: inline-block;
+    vertical-align: top;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: multiply;
+}
+.userHelp, .Info, .Contacts {
+    display: inline-block;
+    padding: 10px;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: 10%;
+    vertical-align: top;
+}
+.userHelp p, .Info p, .Contacts p {
+    margin-top: 3%;
+}
+.userHelp p a, .Info p a, .Contacts p a {
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+    font-size: 1rem;
+}
+.userHelp p a:hover, .Info p a:hover, .Contacts p a:hover {
+    background-color: gray;
+    color: white;
+}
+.Contacts p img {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+.footer2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    clear: both;
+}
+.footer2 p {
+    margin: 0;
+}
+.footer2 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer2 a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}

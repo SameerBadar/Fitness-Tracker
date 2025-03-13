@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f9f9f9;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Items */
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Space between items */
+}
+
+.logo img {
+    width: 120px; /* Logo size */
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+nav ul li {
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Login/Signup Buttons */
+#loginSignUp {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    margin-left: auto; /* Push to the right */
+    margin-left:60%;
+}
+
+#loginSignUp button {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loginSignUp button:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #loginSignUp {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

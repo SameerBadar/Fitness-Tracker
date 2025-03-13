@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2a2a72, #009ffd); /* Gradient background */
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .card1 {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .card1 h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #ff6f61;
+        }
+
+        .progress {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .progress svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .progress circle {
+            fill: none;
+            stroke-width: 10;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
+        .progress circle.outer {
+            stroke: #ff6f61;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            animation: progressAnim 2s forwards;
+        }
+
+        .progress circle.inner {
+            stroke: #ff9a8b;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 157; /* Example for 50% height */
+            animation: progressAnim 2s forwards;
+        }
+
+        @keyframes progressAnim {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .card1 p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .card1 p strong {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Fitness Tracker</h1>
+        <p>“Stay consistent, stay motivated.”</p>
+    </div>
+
+    <div class="container">
+        <div class="card1">
+            <h2>Body Info</h2>
+            <div class="progress">
+                <svg>
+                    <circle class="outer" cx="60" cy="60" r="50"></circle>
+                    <circle class="inner" cx="60" cy="60" r="50"></circle>
+                </svg>
+            </div>
+            <p>Weight: <strong>63:55 kg</strong></p>
+            <p>Height: <strong>5 ft 9 in</strong></p>
+        </div>
+        <div class="card1">
+            <h2>Workout Stats</h2>
+            <p>Total Workouts: <strong>12</strong></p>
+            <p>Calories Burned: <strong>1,200 kcal</strong></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Track your fitness journey. One step at a time!</p>
+    </div>
+</body>
+</html>

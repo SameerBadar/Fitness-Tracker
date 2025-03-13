@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 50px;
+    }
+    ul{
+        display: flex;
+       align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin-left: 30px;
+        
+    }
+    .logo{
+        margin-left: 0;
+        vertical-align: top;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        background: black;
+        color: white;
+        transition: color 0.5s;
+    }
+    .logo img{
+        width: 130px;
+        height: 130px;
+        mix-blend-mode: multiply;
+    }
+    #loginSignUp{
+        display: flex;
+        align-items: center;
+        margin-left: 55%;
+    }
+    #loginSignUp a button{
+        padding: 10px;
+    }
+    #loginSignUp .logIn button{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    #loginSignUp .SignUp button{
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    width: 180px;
+    cursor: pointer;
+    }
+    #loginSignUp .logIn button:hover{
+    background-color: rgb(219, 219, 219);
+    width: 150px;
+    
+    transition: background-color 1s;
+    }
+    #loginSignUp .SignUp button:hover{
+    background-color: rgb(179, 177, 177);
+    transition: background-color 1s;
+    
+    }
+
+    #userImg{
+        position: relative;
+        background-color: green;
+    }
+    

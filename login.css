@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+#LoginDesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 17%;
+    height: 600px; 
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 0px 8px rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#LoginDesign:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.LeftSide {
+    width: 50%; 
+    padding: 10px;
+    padding-top: 80px;
+}
+
+.LeftSide h2 {
+    margin-left: 40%;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.userEmail,
+.userPass {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+.userEmail label,
+.userPass label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.userEmail input,
+.userPass input {
+    margin-top: 1%;
+    width: 90%;
+    height: 45px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid rgba(167, 165, 165, 0.5);
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(255, 255, 255, 0.6);
+    outline: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.userEmail input:focus,
+.userPass input:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2), inset 0px 1px 3px rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
+    color: #000;
+}
+
+.fa-envelope {
+    margin-left: -11%;
+    font-size: 30px;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    margin-left: -10%;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+
+.LeftSide a {
+    color: #000;
+    font-weight: bold;
+    margin-left: 35%;
+    font-size: 20px;
+    margin-top: 7%;
+    display: block;
+}
+
+.LeftSide button {
+    padding: 10px;
+    width: 60%;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.LeftSide button:hover {
+    background-color: gray;
+    transition: background-color 1s;
+}
+
+.rightSide {
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myImg {
+    width: 100%; 
+    height: 130%; 
+    object-fit: cover; 
+}

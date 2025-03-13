@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#Footer1 {
+    background-color: rgba(211, 211, 211, 1);
+    height: 250px;
+    margin-top: 10%;
+    padding-bottom: 20px; /* Add padding at the bottom to create space between the body and footer */
+}
+.logo {
+    margin-left: 7%;
+    display: inline-block;
+    vertical-align: top;
+}
+.logo img {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+.userHelp, .Info, .Contacts {
+    display: inline-block;
+    padding: 10px;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: 12%;
+    vertical-align: top;
+}
+.userHelp p, .Info p, .Contacts p {
+    margin-top: 4%;
+}
+.userHelp p a, .Info p a, .Contacts p a {
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+    font-size: 1.2rem;
+}
+.userHelp p a:hover, .Info p a:hover, .Contacts p a:hover {
+    background-color: gray;
+    color: white;
+}
+.Contacts p img {
+    width: 30px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.footer2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    clear: both; /* Ensure the footer is clear of previous floated content */
+}
+.footer2 p {
+    margin: 0; /* Remove default margin for the footer text */
+}
+.footer2 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer2 a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* Fix body content overflow and footer positioning */
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Add space to prevent footer overlap */
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.main-body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4; /* Neutral background */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.9); /* Subtle white background */
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #9b4d96, #f97316); /* Purple and orange gradient */
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.info-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: white; /* White color for headings */
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 10;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.progress-circle circle.outer-ring {
+    stroke: white;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    animation: progressAnimation 2s forwards;
+}
+
+.progress-circle circle.inner-ring {
+    stroke: #f97316; /* Orange from gradient */
+    stroke-dasharray: 314;
+    stroke-dashoffset: 157; /* Example for 50% height */
+    animation: progressAnimation 2s forwards;
+}
+
+@keyframes progressAnimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: white; /* White text for readability */
+}
+
+.info-card p strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="grid-wrapper">
+            <div class="info-card">
+                <h2>Body Info</h2>
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="outer-ring" cx="60" cy="60" r="50"></circle>
+                        <circle class="inner-ring" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                </div>
+                <p>Weight: <strong>63:55 kg</strong></p>
+                <p>Height: <strong>5 ft 9 in</strong></p>
+            </div>
+            <div class="info-card">
+                <h2>Workout Stats</h2>
+                <p>Total Workouts: <strong>12</strong></p>
+                <p>Calories Burned: <strong>1,200 kcal</strong></p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

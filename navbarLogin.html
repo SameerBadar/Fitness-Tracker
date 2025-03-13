@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Pulse</title>
+<link rel="stylesheet" href="style1.css">
+<style>
+      #userImg {
+        margin-left: 65%;
+        margin-top: 1%;
+        position: relative; /* Ensure .blockNav stays relative to #userImg */
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        border: 3px solid #ddd;
+    }
+    
+    #userImg img {
+        width: 60px;
+        height: 60;
+        vertical-align: top;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-left: 1%;
+        mix-blend-mode: multiply;
+        border: 2px solid white;
+    }
+    
+    .blockNav {
+        display: none; /* Initially hidden */
+        padding: 5px;
+        border-radius: 10px;
+        position: absolute;
+        top: 110%; /* Place slightly below the image */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+    }
+    
+    .blockNav a {
+        color: rgb(88, 88, 88);
+        text-decoration: none;
+        font-size: 15px;
+        display: block; /* Make links stack vertically */
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.0s ease, color 0.0s ease;
+    }
+    
+    .blockNav a:last-child {
+        border-bottom: none; /* Remove bottom border for last link */
+    }
+    
+    .blockNav a:hover {
+        color: black;
+        transition: color 0.3s ease-in-out;
+        background-color: #f0f0f0;
+    
+    }
+    
+    #userImg:hover .blockNav,
+    #userImg .blockNav:hover {
+        display: block;
+    }
+    
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.jpeg.jpg" alt="ImageNotFound"></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <div id="userImg">
+                <img src="userLogin.jpg" alt="ImageNotFound">
+                <div class="blockNav">
+                    <a href="....">Profile and Settings</a>
+                    <a href="....">Privacy Center</a>
+                    <a href="...." >Support</a>
+                    <a href="...." >Logout</a>
+                </div>
+            </div>
+        </ul>
+    </nav> 
+</body>
+</html>
