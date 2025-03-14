@@ -24,13 +24,9 @@
 - Install **XAMPP** 🛠️
 - Start **Apache** & **MySQL** from XAMPP Control Panel ✅
 
-### 3️⃣ Import Database
 
-- Open **phpMyAdmin**
-- Create a database named **fitness\_tracker**
-- Import `fitness_tracker.sql` file (located in the repo) 🎯
 
-### 4️⃣ Run the Project
+### 3️⃣ Run the Project
 
 - Place the project folder inside `htdocs`
 - Open the browser and go to:
@@ -47,7 +43,7 @@ http://localhost/FitnessTracker/
 
 - **Front-end**: HTML, CSS, JavaScript
 - **Back-end**: PHP, MySQL
-- **Tools**: XAMPP, phpMyAdmin
+- **Tools**: XAMPP, phpMyAdmin,Visual Studio Code
 
 ---
 
